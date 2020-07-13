@@ -60,13 +60,13 @@
 
 - (void)initSDK {
     
-    // 无回调的初始化方法
-    [MSSDK initSDK];
+//    // 无回调的初始化方法
+//    [MSSDK initSDK];
     
-//    // 有回调的初始化方法
-//    [MSSDK initSDKCompletion:^{
-//
-//    }];
+    // 有回调的初始化方法
+    [MSSDK initSDKCompletion:^{
+        NSLog(@"InitSDK Completion");
+    }];
 }
 
 - (void)rewardClick {
