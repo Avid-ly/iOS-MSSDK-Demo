@@ -8,11 +8,12 @@ source 'https://github.com/Avid-ly/Avidly-iOS-MSSDK-CocoaPods-Spec.git'
 
 # MSSDK
 # pod repo add Avidly https://github.com/Avid-ly/Avidly-iOS-MSSDK-CocoaPods-Spec.git
+# pod repo update Avidly
 pod 'MSSDK', '~> 1.0.01'
 
 
 # MoPub
-pod 'mopub-ios-sdk', '5.12.1'
+pod 'mopub-ios-sdk/Core', '5.12.1'
 
 # AdColony
 pod 'MoPub-AdColony-Adapters', '4.1.4.0'

@@ -12,6 +12,12 @@
 #import "MSInterstitialDemoViewController.h"
 #import "MSBannerDemoViewController.h"
 
+#if __has_include(<MSSDK/MSSDK.h>)
+    #import <MSSDK/MSSDK.h>
+#else
+    #import "MSSDK.h"
+#endif
+
 @interface ViewController ()
 
 @end
@@ -50,6 +56,17 @@
     [button4 setTitle:@"横幅广告测试" forState:UIControlStateNormal];
     [button4 addTarget:self action:@selector(bannerClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button4];
+}
+
+- (void)initSDK {
+    
+    // 无回调的初始化方法
+    [MSSDK initSDK];
+    
+//    // 有回调的初始化方法
+//    [MSSDK initSDKCompletion:^{
+//
+//    }];
 }
 
 - (void)rewardClick {
