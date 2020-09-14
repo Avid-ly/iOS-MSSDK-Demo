@@ -9,7 +9,7 @@ source 'https://github.com/Avid-ly/Avidly-iOS-MSSDK-CocoaPods-Spec.git'
 # MSSDK
 # pod repo add Avidly https://github.com/Avid-ly/Avidly-iOS-MSSDK-CocoaPods-Spec.git
 # pod repo update Avidly
-pod 'MSSDK', '~> 1.0.01'
+pod 'MSSDK', '~> 1.0.02'
 
 
 # MoPub
