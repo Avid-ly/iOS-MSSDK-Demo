@@ -42,7 +42,4 @@ pod 'MoPub-FacebookAudienceNetwork-Adapters', '5.10.1.1'
 # Google (AdMob & Ad Manager)
 pod 'MoPub-AdMob-Adapters', '7.64.0.0'
 
-# XYUUID
-pod 'XYUUID', '1.0.0'
-
 end
