@@ -4,17 +4,17 @@ PODS:
   - ChartboostSDK (8.2.0)
   - FBAudienceNetwork (5.10.1):
     - FBSDKCoreKit/Basics (>= 5.6.0)
-  - FBSDKCoreKit/Basics (7.1.1)
+  - FBSDKCoreKit/Basics (8.0.0)
   - Google-Mobile-Ads-SDK (7.64.0):
     - GoogleAppMeasurement (~> 6.0)
     - GoogleUserMessagingPlatform (~> 1.1)
-  - GoogleAppMeasurement (6.7.2):
+  - GoogleAppMeasurement (6.9.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
     - GoogleUtilities/Network (~> 6.7)
     - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30905.0)
-  - GoogleUserMessagingPlatform (1.1.0)
+    - nanopb (~> 1.30906.0)
+  - GoogleUserMessagingPlatform (1.2.0)
   - GoogleUtilities/AppDelegateSwizzler (6.7.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -93,8 +93,8 @@ PODS:
     - FBAudienceNetwork (= 5.10.1)
     - mopub-ios-sdk/Core (~> 5.13)
     - mopub-ios-sdk/NativeAds (~> 5.13)
-  - mopub-ios-sdk/Core (5.13.1)
-  - mopub-ios-sdk/NativeAds (5.13.1):
+  - mopub-ios-sdk/Core (5.14.1)
+  - mopub-ios-sdk/NativeAds (5.14.1):
     - mopub-ios-sdk/Core
   - MoPub-IronSource-Adapters (6.18.0.2.0):
     - MoPub-IronSource-Adapters/MoPub (= 6.18.0.2.0)
@@ -138,15 +138,14 @@ PODS:
     - mopub-ios-sdk/Core (~> 5.13)
     - VungleSDK-iOS (= 6.7.1)
   - MSSDK (1.0.02)
-  - nanopb (1.30905.0):
-    - nanopb/decode (= 1.30905.0)
-    - nanopb/encode (= 1.30905.0)
-  - nanopb/decode (1.30905.0)
-  - nanopb/encode (1.30905.0)
-  - PromisesObjC (1.2.10)
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
+  - PromisesObjC (1.2.11)
   - UnityAds (3.4.8)
   - VungleSDK-iOS (6.7.1)
-  - XYUUID (1.0.0)
 
 DEPENDENCIES:
   - MoPub-AdColony-Adapters (= 4.3.0.2)
@@ -154,13 +153,12 @@ DEPENDENCIES:
   - MoPub-Applovin-Adapters (= 6.13.4.0)
   - MoPub-Chartboost-Adapters (= 8.2.0.3)
   - MoPub-FacebookAudienceNetwork-Adapters (= 5.10.1.1)
-  - mopub-ios-sdk/Core (= 5.13.1)
+  - mopub-ios-sdk/Core (= 5.14.1)
   - MoPub-IronSource-Adapters (= 6.18.0.2.0)
   - MoPub-Mintegral-Adapters (= 6.4.0.0.0)
   - MoPub-UnityAds-Adapters (= 3.4.8.0)
   - MoPub-Vungle-Adapters (= 6.7.1.0)
-  - MSSDK (~> 1.0.01)
-  - XYUUID (= 1.0.0)
+  - MSSDK (~> 1.0.02)
 
 SPEC REPOS:
   https://github.com/Avid-ly/Avidly-iOS-MSSDK-CocoaPods-Spec.git:
@@ -191,17 +189,16 @@ SPEC REPOS:
     - PromisesObjC
     - UnityAds
     - VungleSDK-iOS
-    - XYUUID
 
 SPEC CHECKSUMS:
   AdColony: dd17468f79dce5955d2079342d260aef1ca1e4f1
   AppLovinSDK: 1ad8c52f5bdd4dfc8c6a587112d681db79bfb814
   ChartboostSDK: ced50b199c29b6fa55a14b676114ec695b7d2315
   FBAudienceNetwork: 6cdcc40aa475e8045ab14398e181a3dc90a5014e
-  FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
+  FBSDKCoreKit: 9d27fe97a2fa2abe5eeefea8240e837623ab88e0
   Google-Mobile-Ads-SDK: aec52559ce73ddf1e6478d1904dd71a741f1bc61
-  GoogleAppMeasurement: 3def7652b1f5b5a576178dc332e2a36a260fbef6
-  GoogleUserMessagingPlatform: 9dc714d2e1f0aa727b9cc52d266dc1b155f4c3f2
+  GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
+  GoogleUserMessagingPlatform: c85530d930ba509583aa5a6d50a10aca22cf8502
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   IronSourceSDK: 6fb80d531a1020388ff33d0faa9d33d6e03004d3
   MintegralAdSDK: c8ad29c97ad50f04683c4019f264186ca69fa8c8
@@ -210,18 +207,17 @@ SPEC CHECKSUMS:
   MoPub-Applovin-Adapters: 2a88cca0d63d46c26928b01a5954340ef056a1f3
   MoPub-Chartboost-Adapters: adf0da5c5a5d561d95b51384afa9d6ccc05e82da
   MoPub-FacebookAudienceNetwork-Adapters: 15bc25263a11f5a094c05ae16dd99b64991859a1
-  mopub-ios-sdk: 18af57aaf79d0ea3d0232b43b2d603ae8ea8e826
+  mopub-ios-sdk: b60afe997d7631e6bea6e1ae8a3d3727be9cd171
   MoPub-IronSource-Adapters: 953b92a4aceebf109ba2ab801dcdf7e89bd09bf0
   MoPub-Mintegral-Adapters: c3cf37ac5e97c994d7c95629cd540d6d13beb54a
   MoPub-UnityAds-Adapters: 84ace0e28b28bd6bfba62e58ce9ccce2a60b7f34
   MoPub-Vungle-Adapters: 89ba23386734cc014b068da170b94f799af14b44
   MSSDK: b595496f18609e3477678091c23d5cd978018020
-  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
-  PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   UnityAds: 729ce6e485d5ae45df03ad13e440cde6967feee3
   VungleSDK-iOS: e9d4f16042b14a24a5bee290c1eb21452e9a81cf
-  XYUUID: 9a2483143d14fc5204b619042ca65073df9fbd88
 
-PODFILE CHECKSUM: e470ab7cd7782658af6c4bba2c4cd32d0de92111
+PODFILE CHECKSUM: 6ebed0b4a12cd905a4feb42951508653356a2165
 
 COCOAPODS: 1.8.4

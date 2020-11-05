@@ -13,33 +13,33 @@ pod 'MSSDK', '~> 1.0.02'
 
 
 # MoPub
-pod 'mopub-ios-sdk/Core', '5.13.1'
+pod 'mopub-ios-sdk/Core', '5.14.1'
 
 # AdColony
-pod 'MoPub-AdColony-Adapters', '4.3.0.2'
+pod 'MoPub-AdColony-Adapters', '4.4.1.1.0'
 
 # AppLovin
-pod 'MoPub-Applovin-Adapters', '6.13.4.0'
+pod 'MoPub-Applovin-Adapters', '6.14.4.1'
 
 # Chartboost
-pod 'MoPub-Chartboost-Adapters', '8.2.0.3'
+pod 'MoPub-Chartboost-Adapters', '8.3.1.1'
 
-# Mintegral
-pod 'MoPub-Mintegral-Adapters', '6.4.0.0.0'
+# Mintegral 移除
+# pod 'MoPub-Mintegral-Adapters', '6.4.0.0.0'
 
 # ironSource
-pod 'MoPub-IronSource-Adapters', '6.18.0.2.0'
+pod 'MoPub-IronSource-Adapters', '7.0.2.0.0'
 
 # Unity Ads
 pod 'MoPub-UnityAds-Adapters', '3.4.8.0'
 
 # Vungle
-pod 'MoPub-Vungle-Adapters', '6.7.1.0'
+pod 'MoPub-Vungle-Adapters', '6.8.0.1'
 
 # Facebook Audience Network
-pod 'MoPub-FacebookAudienceNetwork-Adapters', '5.10.1.1'
+pod 'MoPub-FacebookAudienceNetwork-Adapters', '6.0.0.1'
 
 # Google (AdMob & Ad Manager)
-pod 'MoPub-AdMob-Adapters', '7.64.0.0'
+pod 'MoPub-AdMob-Adapters', '7.66.0.0'
 
 end
