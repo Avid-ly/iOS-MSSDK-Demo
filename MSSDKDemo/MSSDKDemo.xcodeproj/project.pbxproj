@@ -17,6 +17,7 @@
 		AA34F1A02469247900F65FEF /* MSBannerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA34F19C2469247800F65FEF /* MSBannerDemoViewController.m */; };
 		AA34F1A12469247900F65FEF /* MSInterstitialDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA34F19D2469247900F65FEF /* MSInterstitialDemoViewController.m */; };
 		AA34F1A22469247900F65FEF /* MSRewardDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA34F19E2469247900F65FEF /* MSRewardDemoViewController.m */; };
+		AA9EDF6225CD493E002F1D1B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EDF6125CD493E002F1D1B /* File.swift */; };
 		BD09B3B90FAFCB669C1F5E5F /* libPods-MSSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942CF5E26D070BF52784098B /* libPods-MSSDKDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		AA34F19D2469247900F65FEF /* MSInterstitialDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSInterstitialDemoViewController.m; sourceTree = "<group>"; };
 		AA34F19E2469247900F65FEF /* MSRewardDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRewardDemoViewController.m; sourceTree = "<group>"; };
 		AA34F19F2469247900F65FEF /* MSRewardDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRewardDemoViewController.h; sourceTree = "<group>"; };
+		AA9EDF6025CD493D002F1D1B /* MSSDKDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSSDKDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA9EDF6125CD493E002F1D1B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DB61AD341C91413EAEDEF324 /* Pods-MSSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-MSSDKDemo/Pods-MSSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +103,7 @@
 				AA1BFB4A245985F500D6E5D5 /* SceneDelegate.m */,
 				AA1BFB4C245985F500D6E5D5 /* ViewController.h */,
 				AA1BFB4D245985F500D6E5D5 /* ViewController.m */,
+				AA9EDF6125CD493E002F1D1B /* File.swift */,
 				AA34F19B2469247800F65FEF /* MSBannerDemoViewController.h */,
 				AA34F19C2469247800F65FEF /* MSBannerDemoViewController.m */,
 				AA34F19A2469247800F65FEF /* MSInterstitialDemoViewController.h */,
@@ -111,6 +115,7 @@
 				AA1BFB54245985F700D6E5D5 /* LaunchScreen.storyboard */,
 				AA1BFB57245985F700D6E5D5 /* Info.plist */,
 				AA1BFB58245985F700D6E5D5 /* main.m */,
+				AA9EDF6025CD493D002F1D1B /* MSSDKDemo-Bridging-Header.h */,
 			);
 			path = MSSDKDemo;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				TargetAttributes = {
 					AA1BFB42245985F500D6E5D5 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -234,6 +240,7 @@
 				AA1BFB48245985F500D6E5D5 /* AppDelegate.m in Sources */,
 				AA1BFB59245985F700D6E5D5 /* main.m in Sources */,
 				AA1BFB4B245985F500D6E5D5 /* SceneDelegate.m in Sources */,
+				AA9EDF6225CD493E002F1D1B /* File.swift in Sources */,
 				AA34F1A22469247900F65FEF /* MSRewardDemoViewController.m in Sources */,
 				AA34F1A12469247900F65FEF /* MSInterstitialDemoViewController.m in Sources */,
 			);
@@ -376,11 +383,12 @@
 			baseConfigurationReference = DB61AD341C91413EAEDEF324 /* Pods-MSSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8Q98XXS96P;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MSSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,6 +399,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.upltv.upsdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = com.upltv.upsdk_Development_Profile;
+				SWIFT_OBJC_BRIDGING_HEADER = "MSSDKDemo/MSSDKDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -400,11 +411,12 @@
 			baseConfigurationReference = 136CA12ECC616E1FCDDB35E5 /* Pods-MSSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8Q98XXS96P;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MSSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,6 +427,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.upltv.upsdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = com.upltv.upsdk_Development_Profile;
+				SWIFT_OBJC_BRIDGING_HEADER = "MSSDKDemo/MSSDKDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
