@@ -4,39 +4,30 @@ platform :ios, '10.0'
 target 'MSSDKDemo' do
 
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/Avid-ly/Avidly-iOS-MSSDK-CocoaPods-Spec.git'
+source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
 # MSSDK
-# pod repo add Avidly https://github.com/Avid-ly/Avidly-iOS-MSSDK-CocoaPods-Spec.git
-# pod repo update Avidly
-pod 'MSSDK', '~> 1.0.04'
+pod 'MSSDK', '0.0.0.1.debug'
 
+# Admob
+pod 'Google-Mobile-Ads-SDK'
 
-# MoPub
-pod 'mopub-ios-sdk/Core', '5.16.1'
+# Admob Mediation
+pod 'GoogleMobileAdsMediationAdColony'
+pod 'GoogleMobileAdsMediationAppLovin'
+pod 'GoogleMobileAdsMediationChartboost'
+pod 'GoogleMobileAdsMediationFacebook'
+pod 'GoogleMobileAdsMediationFyber'
+pod 'GoogleMobileAdsMediationIMobile'
+pod 'GoogleMobileAdsMediationInMobi'
+pod 'GoogleMobileAdsMediationIronSource'
+pod 'GoogleMobileAdsMediationUnity'
+pod 'GoogleMobileAdsMediationVungle'
 
-# AdColony
-pod 'MoPub-AdColony-Adapters', '4.5.0.2'
+# Admob Mediation Test
+#pod 'GoogleMobileAdsMediationTestSuite'
 
-# AppLovin
-pod 'MoPub-Applovin-Adapters', '6.15.2.1'
-
-# Chartboost
-pod 'MoPub-Chartboost-Adapters', '8.4.1.0'
-
-# ironSource
-pod 'MoPub-IronSource-Adapters', '7.1.2.0.0'
-
-# Unity Ads
-pod 'MoPub-UnityAds-Adapters', '3.6.0.1'
-
-# Vungle
-pod 'MoPub-Vungle-Adapters', '6.9.1.1'
-
-# Facebook Audience Network
-pod 'MoPub-FacebookAudienceNetwork-Adapters', '6.3.0.0'
-
-# Google (AdMob & Ad Manager)
-pod 'MoPub-AdMob-Adapters', '7.69.0.3'
+# TASDK
+pod 'TASDK', '4.1.0.6'
 
 end
