@@ -23,6 +23,8 @@
 //#import <GoogleMobileAdsMediationTestSuite/GoogleMobileAdsMediationTestSuite.h>
 #import <TraceAnalysisSDK/TraceAnalysis.h>
 
+#import <AppLovinSDK/AppLovinSDK.h>
+#import "MSMaxBannerDemoViewController.h"
 
 @interface ViewController ()
 
@@ -36,6 +38,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     float y = 50;
+    
+    UIButton *button10 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button10.backgroundColor = [UIColor orangeColor];
+    button10.frame = CGRectMake(self.view.frame.size.width/2 - 250/2, y+20, 250, 40);
+    [button10 setTitle:@"检查SDK版本" forState:UIControlStateNormal];
+    [button10 addTarget:self action:@selector(checkSDKVersion) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button10];
+    y = button10.frame.origin.y + button10.frame.size.height + 30;
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.backgroundColor = [UIColor orangeColor];
@@ -80,10 +90,24 @@
     UIButton *button8 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button8.backgroundColor = [UIColor orangeColor];
     button8.frame = CGRectMake(self.view.frame.size.width/2 - 250/2, y, 250, 40);
-    [button8 setTitle:@"Admob中介测试" forState:UIControlStateNormal];
-    [button8 addTarget:self action:@selector(admobAdInspectorTest) forControlEvents:UIControlEventTouchUpInside];
+    [button8 setTitle:@"MAX中介测试" forState:UIControlStateNormal];
+    [button8 addTarget:self action:@selector(maxMediationTest) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button8];
     y = button8.frame.origin.y + button8.frame.size.height;
+}
+
+#pragma mark -click
+
+- (void)checkSDKVersion {
+    NSString *version = [MSSDK sdkVersion];
+    NSString *network = [MSSDK sdkNetwork];
+    NSString *pkg = [[NSBundle mainBundle] bundleIdentifier];
+    NSString *msg = [NSString stringWithFormat:@"当前MSSDK版本为：%@ \n当前SDK的Network为：%@ \n当前包名为：%@",version,network,pkg];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"版本检查" message:msg preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}];
+    [alert addAction:action2];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)initSDK {
@@ -120,7 +144,7 @@
 
 - (void)bannerClick {
 //    MSMopubBannerDemoViewController *vc = [[MSMopubBannerDemoViewController alloc] init];
-    MSAdmobBannerDemoViewController *vc = [[MSAdmobBannerDemoViewController alloc] init];
+    MSMaxBannerDemoViewController *vc = [[MSMaxBannerDemoViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:nav animated:YES completion:^{
@@ -140,6 +164,10 @@
       completionHandler:^(NSError *error) {
         NSLog(@"111111  %@",error);
     }];
+}
+
+- (void)maxMediationTest {
+    [[ALSdk shared] showMediationDebugger];
 }
 
 @end

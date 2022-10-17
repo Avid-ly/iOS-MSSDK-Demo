@@ -7,27 +7,22 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
 # MSSDK
-pod 'MSSDK', '0.0.0.1.debug'
-
-# Admob
-pod 'Google-Mobile-Ads-SDK'
-
-# Admob Mediation
-pod 'GoogleMobileAdsMediationAdColony'
-pod 'GoogleMobileAdsMediationAppLovin'
-pod 'GoogleMobileAdsMediationChartboost'
-pod 'GoogleMobileAdsMediationFacebook'
-pod 'GoogleMobileAdsMediationFyber'
-pod 'GoogleMobileAdsMediationIMobile'
-pod 'GoogleMobileAdsMediationInMobi'
-pod 'GoogleMobileAdsMediationIronSource'
-pod 'GoogleMobileAdsMediationUnity'
-pod 'GoogleMobileAdsMediationVungle'
-
-# Admob Mediation Test
-#pod 'GoogleMobileAdsMediationTestSuite'
+pod 'MSSDK', '3.0.0.2'
+pod 'AppLovinSDK'
+pod 'AppLovinMediationAdColonyAdapter'
+pod 'AppLovinMediationChartboostAdapter'
+pod 'AppLovinMediationFyberAdapter'
+pod 'AppLovinMediationGoogleAdapter'
+pod 'AppLovinMediationInMobiAdapter'
+pod 'AppLovinMediationIronSourceAdapter'
+pod 'AppLovinMediationFacebookAdapter'
+pod 'AppLovinMediationUnityAdsAdapter'
+pod 'AppLovinMediationVungleAdapter'
+pod 'AppLovinMediationGoogleAdManagerAdapter'
+pod 'AppLovinMediationByteDanceAdapter'
+pod 'AppLovinMediationTapjoyAdapter'
 
 # TASDK
-pod 'TASDK', '4.1.0.6'
+pod 'TASDK'
 
 end

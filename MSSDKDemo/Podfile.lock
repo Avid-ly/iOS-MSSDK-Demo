@@ -1,64 +1,129 @@
 PODS:
-  - AdColony (4.7.2)
-  - AppLovinSDK (11.2.1)
-  - ChartboostSDK (8.5.0.1)
-  - FBAudienceNetwork (6.9.0)
-  - Fyber_Marketplace_SDK (8.1.3):
-    - Fyber_Marketplace_SDK/IASDKCore (= 8.1.3)
-  - Fyber_Marketplace_SDK/IASDKCore (8.1.3)
-  - Google-Mobile-Ads-SDK (9.1.0):
-    - GoogleAppMeasurement (< 9.0, >= 7.0)
-    - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (8.13.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.13.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.13.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.13.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (8.13.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleMobileAdsMediationAdColony (4.7.2.2):
-    - AdColony (= 4.7.2)
-    - Google-Mobile-Ads-SDK (~> 9.0)
-  - GoogleMobileAdsMediationAppLovin (11.2.1.0):
-    - AppLovinSDK (= 11.2.1)
-    - Google-Mobile-Ads-SDK (~> 9.0)
-  - GoogleMobileAdsMediationChartboost (8.5.0.2):
-    - ChartboostSDK (= 8.5.0.1)
-    - Google-Mobile-Ads-SDK (~> 9.0)
-  - GoogleMobileAdsMediationFacebook (6.9.0.1):
+  - AdColony (4.9.0)
+  - Ads-CN/BUAdSDK_Compatible (4.7.1.1):
+    - Ads-CN/Dep_Compatible
+  - Ads-CN/Dep_Compatible (4.7.1.1):
+    - BUAdSDK (~> 0.1.0.24)
+    - BURelyFoundation/CSJ (~> 0.0.3.11)
+  - Ads-Global/APM (4.7.0.4):
+    - RangersAPM-Pangle/Crash (= 2.13.0)
+    - RangersAPM-Pangle/Global (= 2.13.0)
+    - RangersAPM-Pangle/SessionTracker (= 2.13.0)
+  - Ads-Global/BUAdSDK_Compatible (4.7.0.4):
+    - Ads-Global/APM
+    - Ads-Global/BURelyAdSDK
+    - Ads-Global/Dep_Compatible
+  - Ads-Global/BURelyAdSDK (4.7.0.4)
+  - Ads-Global/Dep_Compatible (4.7.0.4):
+    - BUAdSDK (~> 0.1.0.19)
+    - BURelyFoundation/Pangle (~> 0.0.3.10)
+  - AppLovinMediationAdColonyAdapter (4.9.0.0.0):
+    - AdColony (= 4.9.0)
+    - AppLovinSDK
+  - AppLovinMediationByteDanceAdapter (4.7.0.4.0):
+    - Ads-CN/BUAdSDK_Compatible (= 4.7.1.1)
+    - Ads-Global/BUAdSDK_Compatible (= 4.7.0.4)
+    - AppLovinSDK
+  - AppLovinMediationChartboostAdapter (9.1.0.0):
+    - AppLovinSDK
+    - ChartboostSDK (= 9.1.0)
+  - AppLovinMediationFacebookAdapter (6.9.0.1):
+    - AppLovinSDK
     - FBAudienceNetwork (= 6.9.0)
-    - Google-Mobile-Ads-SDK (~> 9.0)
-  - GoogleMobileAdsMediationFyber (8.1.3.1):
-    - Fyber_Marketplace_SDK (= 8.1.3)
-    - Google-Mobile-Ads-SDK (~> 9.0)
-  - GoogleMobileAdsMediationIMobile (2.2.0.1):
-    - Google-Mobile-Ads-SDK (~> 9.0)
-    - ImobileSdkAds (= 2.2.0)
-  - GoogleMobileAdsMediationInMobi (10.0.2.1):
-    - Google-Mobile-Ads-SDK (~> 9.0)
-    - InMobiSDK/Core (= 10.0.2)
-  - GoogleMobileAdsMediationIronSource (7.2.1.0):
-    - Google-Mobile-Ads-SDK (~> 9.0)
-    - IronSourceSDK (= 7.2.1)
-  - GoogleMobileAdsMediationUnity (4.0.1.0):
-    - Google-Mobile-Ads-SDK (~> 9.0)
-    - UnityAds (= 4.0.1)
-  - GoogleMobileAdsMediationVungle (6.10.6.1):
-    - Google-Mobile-Ads-SDK (~> 9.0)
-    - VungleSDK-iOS (= 6.10.6)
+  - AppLovinMediationFyberAdapter (8.1.5.0):
+    - AppLovinSDK
+    - Fyber_Marketplace_SDK (= 8.1.5)
+  - AppLovinMediationGoogleAdapter (9.5.0.0):
+    - AppLovinSDK
+    - Google-Mobile-Ads-SDK (= 9.5.0)
+  - AppLovinMediationGoogleAdManagerAdapter (9.5.0.0):
+    - AppLovinSDK
+    - Google-Mobile-Ads-SDK (= 9.5.0)
+  - AppLovinMediationInMobiAdapter (10.0.7.0):
+    - AppLovinSDK
+    - InMobiSDK/Core (= 10.0.7)
+  - AppLovinMediationIronSourceAdapter (7.2.1.2.1):
+    - AppLovinSDK
+    - IronSourceSDK (= 7.2.1.2)
+  - AppLovinMediationTapjoyAdapter (12.10.0.2):
+    - AppLovinSDK
+    - TapjoySDK (= 12.10.0)
+  - AppLovinMediationUnityAdsAdapter (4.2.1.0):
+    - AppLovinSDK
+    - UnityAds (= 4.2.1)
+  - AppLovinMediationVungleAdapter (6.11.0.2):
+    - AppLovinSDK
+    - VungleSDK-iOS (= 6.11.0)
+  - AppLovinSDK (11.5.1)
+  - BUAdSDK (0.1.0.24):
+    - BUAdSDK/BUAdSDK (= 0.1.0.24)
+  - BUAdSDK/BUAdSDK (0.1.0.24)
+  - BURelyFoundation/AFNetworking (0.0.3.13)
+  - BURelyFoundation/BURelyFoundation (0.0.3.13)
+  - BURelyFoundation/CSJ (0.0.3.13):
+    - BURelyFoundation/AFNetworking
+    - BURelyFoundation/BURelyFoundation
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Gecko
+    - BURelyFoundation/HM
+    - BURelyFoundation/NETWork
+    - BURelyFoundation/SDWebImage
+    - BURelyFoundation/YYModel
+    - BURelyFoundation/ZFPlayer
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Foundation (0.0.3.13):
+    - BURelyFoundation/NETWork
+  - BURelyFoundation/Gecko (0.0.3.13):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/HM (0.0.3.13)
+  - BURelyFoundation/NETWork (0.0.3.13):
+    - BURelyFoundation/AFNetworking
+  - BURelyFoundation/Pangle (0.0.3.13):
+    - BURelyFoundation/AFNetworking
+    - BURelyFoundation/BURelyFoundation
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Gecko
+    - BURelyFoundation/NETWork
+    - BURelyFoundation/SDWebImage
+    - BURelyFoundation/YYModel
+    - BURelyFoundation/ZFPlayer
+    - BURelyFoundation/Zip
+  - BURelyFoundation/SDWebImage (0.0.3.13):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/YYModel (0.0.3.13)
+  - BURelyFoundation/ZFPlayer (0.0.3.13):
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Zip (0.0.3.13):
+    - BURelyFoundation/Foundation
+  - ChartboostSDK (9.1.0)
+  - FBAudienceNetwork (6.9.0)
+  - Fyber_Marketplace_SDK (8.1.5):
+    - Fyber_Marketplace_SDK/IASDKCore (= 8.1.5)
+  - Fyber_Marketplace_SDK/IASDKCore (8.1.5)
+  - Google-Mobile-Ads-SDK (9.5.0):
+    - GoogleAppMeasurement (< 10.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (9.1.0):
+    - GoogleAppMeasurement/AdIdSupport (= 9.1.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (9.1.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 9.1.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (9.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
   - GoogleUserMessagingPlatform (2.0.0)
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
@@ -77,34 +142,68 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.7.0)"
   - GoogleUtilities/Reachability (7.7.0):
     - GoogleUtilities/Logger
-  - ImobileSdkAds (2.2.0)
-  - InMobiSDK/Core (10.0.2)
-  - IronSourceSDK (7.2.1.0)
-  - MSSDK (0.0.0.1.debug)
-  - nanopb (2.30908.0):
-    - nanopb/decode (= 2.30908.0)
-    - nanopb/encode (= 2.30908.0)
-  - nanopb/decode (2.30908.0)
-  - nanopb/encode (2.30908.0)
-  - PromisesObjC (2.0.0)
-  - TASDK (4.1.0.6)
-  - UnityAds (4.0.1)
-  - VungleSDK-iOS (6.10.6)
+  - InMobiSDK/Core (10.0.7)
+  - IronSourceSDK (7.2.1.2)
+  - MSSDK (3.0.0.2)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - OneKit-Pangle/BaseKit (1.3.11)
+  - OneKit-Pangle/Database (1.3.11):
+    - OneKit-Pangle/Service
+  - OneKit-Pangle/Reachability (1.3.11):
+    - OneKit-Pangle/Service
+  - OneKit-Pangle/Service (1.3.11)
+  - PromisesObjC (2.1.0)
+  - RangersAPM-Pangle/Above (2.13.0)
+  - RangersAPM-Pangle/Core (2.13.0):
+    - OneKit-Pangle/BaseKit (= 1.3.11)
+  - RangersAPM-Pangle/Crash (2.13.0):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/Global (2.13.0):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/HMD (2.13.0):
+    - OneKit-Pangle/Database (= 1.3.11)
+    - RangersAPM-Pangle/Core
+  - RangersAPM-Pangle/Public (2.13.0):
+    - RangersAPM-Pangle/Above
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Zyone
+    - RARegisterKit-Pangle/Core (= 0.0.4)
+  - RangersAPM-Pangle/SessionTracker (2.13.0):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/Zyone (2.13.0)
+  - RARegisterKit-Pangle/Core (0.0.4):
+    - OneKit-Pangle/BaseKit (= 1.3.11)
+    - OneKit-Pangle/Reachability (= 1.3.11)
+  - TapjoySDK (12.10.0)
+  - TASDK (4.1.0.9)
+  - UnityAds (4.2.1)
+  - VungleSDK-iOS (6.11.0)
 
 DEPENDENCIES:
-  - Google-Mobile-Ads-SDK
-  - GoogleMobileAdsMediationAdColony
-  - GoogleMobileAdsMediationAppLovin
-  - GoogleMobileAdsMediationChartboost
-  - GoogleMobileAdsMediationFacebook
-  - GoogleMobileAdsMediationFyber
-  - GoogleMobileAdsMediationIMobile
-  - GoogleMobileAdsMediationInMobi
-  - GoogleMobileAdsMediationIronSource
-  - GoogleMobileAdsMediationUnity
-  - GoogleMobileAdsMediationVungle
-  - MSSDK (= 0.0.0.1.debug)
-  - TASDK (= 4.1.0.6)
+  - AppLovinMediationAdColonyAdapter
+  - AppLovinMediationByteDanceAdapter
+  - AppLovinMediationChartboostAdapter
+  - AppLovinMediationFacebookAdapter
+  - AppLovinMediationFyberAdapter
+  - AppLovinMediationGoogleAdapter
+  - AppLovinMediationGoogleAdManagerAdapter
+  - AppLovinMediationInMobiAdapter
+  - AppLovinMediationIronSourceAdapter
+  - AppLovinMediationTapjoyAdapter
+  - AppLovinMediationUnityAdsAdapter
+  - AppLovinMediationVungleAdapter
+  - AppLovinSDK
+  - MSSDK (= 3.0.0.2)
+  - TASDK
 
 SPEC REPOS:
   https://github.com/Avid-ly/iOS-CocoaPods-Spec.git:
@@ -112,62 +211,80 @@ SPEC REPOS:
     - TASDK
   https://github.com/CocoaPods/Specs.git:
     - AdColony
+    - Ads-CN
+    - Ads-Global
+    - AppLovinMediationAdColonyAdapter
+    - AppLovinMediationByteDanceAdapter
+    - AppLovinMediationChartboostAdapter
+    - AppLovinMediationFacebookAdapter
+    - AppLovinMediationFyberAdapter
+    - AppLovinMediationGoogleAdapter
+    - AppLovinMediationGoogleAdManagerAdapter
+    - AppLovinMediationInMobiAdapter
+    - AppLovinMediationIronSourceAdapter
+    - AppLovinMediationTapjoyAdapter
+    - AppLovinMediationUnityAdsAdapter
+    - AppLovinMediationVungleAdapter
     - AppLovinSDK
+    - BUAdSDK
+    - BURelyFoundation
     - ChartboostSDK
     - FBAudienceNetwork
     - Fyber_Marketplace_SDK
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
-    - GoogleMobileAdsMediationAdColony
-    - GoogleMobileAdsMediationAppLovin
-    - GoogleMobileAdsMediationChartboost
-    - GoogleMobileAdsMediationFacebook
-    - GoogleMobileAdsMediationFyber
-    - GoogleMobileAdsMediationIMobile
-    - GoogleMobileAdsMediationInMobi
-    - GoogleMobileAdsMediationIronSource
-    - GoogleMobileAdsMediationUnity
-    - GoogleMobileAdsMediationVungle
     - GoogleUserMessagingPlatform
     - GoogleUtilities
-    - ImobileSdkAds
     - InMobiSDK
     - IronSourceSDK
     - nanopb
+    - OneKit-Pangle
     - PromisesObjC
+    - RangersAPM-Pangle
+    - RARegisterKit-Pangle
+    - TapjoySDK
     - UnityAds
     - VungleSDK-iOS
 
 SPEC CHECKSUMS:
-  AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
-  AppLovinSDK: 2ed08703a7e44477ef5dedc264a1ef1e8050dd6c
-  ChartboostSDK: bc503f96531ca516e9cff73b03910724b6607a1c
+  AdColony: 4f3738dc633d7aaa8ec60729df973076cc8e97ed
+  Ads-CN: 1d80074cc0110be57b7c047fc8b61d56647b78d2
+  Ads-Global: 648e2d96343a71da532152000c7d724a7e48bc35
+  AppLovinMediationAdColonyAdapter: 7a8ecb9aea65df7fb5044eae4c5fa8fb904ed72d
+  AppLovinMediationByteDanceAdapter: 75c4db69d14bca43928ba3b34f1d230235bdbf50
+  AppLovinMediationChartboostAdapter: ec5125bf7fcb2b60d9e04efbb6143374bbc974cc
+  AppLovinMediationFacebookAdapter: 4f0d7f26b778992a7852610c4cb17234a0bc3bee
+  AppLovinMediationFyberAdapter: d6882e8d14cf097d59ef898f9a58782432c21c25
+  AppLovinMediationGoogleAdapter: c4354e6158bd9cf575b84c54eddc546f865c0560
+  AppLovinMediationGoogleAdManagerAdapter: 8bfd87475761962207e58724e25ece4305769857
+  AppLovinMediationInMobiAdapter: a2227a3bbeca616d8222c8566bc58700e0cf0b80
+  AppLovinMediationIronSourceAdapter: 6356efcc4da0a944f8a79763f81abada26105c99
+  AppLovinMediationTapjoyAdapter: 3126659df56b6c807a1e5c4474dd1542e976d258
+  AppLovinMediationUnityAdsAdapter: 307dde4cefbca953fb3ac80120c2301034876a42
+  AppLovinMediationVungleAdapter: d6048f0a19a37b6b579b2e0cf9c99ec42a224fd8
+  AppLovinSDK: 40398f6ec127e01f53992b2acd663252647c0dbb
+  BUAdSDK: 5528f72f7b9b478a12743ea23af7bdb9746efc00
+  BURelyFoundation: 92b5a155543721655445b54ddbbf3035a0c6f16e
+  ChartboostSDK: 66d900e0405c3e7d29a1bc2782c583101b565c56
   FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
-  Fyber_Marketplace_SDK: 1a5fde3938e65d1e9d0da41a32681cf2655eb6f5
-  Google-Mobile-Ads-SDK: d6ebb0e05cc38f4fad82d77a6655552213ed5e38
-  GoogleAppMeasurement: 135c2fbcf5038e0f37dbce04fa641a702fc275d1
-  GoogleMobileAdsMediationAdColony: 963c46cd09215ab6531b691f7512cefb1e85f65b
-  GoogleMobileAdsMediationAppLovin: 2d41c3a4c97871c905fac68f9ab49ae7dc456a10
-  GoogleMobileAdsMediationChartboost: d5d7534f82adad12aec09a66018f95b0787c4650
-  GoogleMobileAdsMediationFacebook: 094a78a19e7e1b0a6f971581c28f1f361c4f9618
-  GoogleMobileAdsMediationFyber: 6a7fd1da4ec0be7fbeac6a3518499b32eb986d03
-  GoogleMobileAdsMediationIMobile: d4dc2cd8b7997f416dfffc943fd6863f7196c7e1
-  GoogleMobileAdsMediationInMobi: 98c31e37acf9c5ea010da4f0c8f63f6e8b14385f
-  GoogleMobileAdsMediationIronSource: 0e92e3ab71a2a8bd30de8d8616576100263739d0
-  GoogleMobileAdsMediationUnity: ce143747f8c1f16709a9ab35b737c4ebdcadce52
-  GoogleMobileAdsMediationVungle: b81519403502c2a1f290c5de42216165493a58f6
+  Fyber_Marketplace_SDK: 8079047b963f2e829fde65ac69677d95e73501f1
+  Google-Mobile-Ads-SDK: caf686ba55108412e02a3eedb136e12e488dbfaa
+  GoogleAppMeasurement: 8ecc717f2abe3f9ee95a5d38db08827852894acc
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
-  ImobileSdkAds: 6e379460ba151a148679ac9db1e0c0e5debc825b
-  InMobiSDK: ff90089c722e6ce387d85a7d07a45902c73ecf24
-  IronSourceSDK: 49c6abb070214a60ee9f201a30336eb733b4adf1
-  MSSDK: eceafce7cd463d076967c1f1910f97df516bd6e0
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  TASDK: 9475ae99bd0da48dd73703c3b4ce1d01045e2625
-  UnityAds: 6d2fecf09f314049993b9d1c0fcd2efc43dfa60e
-  VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
+  InMobiSDK: 05929df4efec452604ca391363fbff3b4e335794
+  IronSourceSDK: 58febda45afa4b16f91dacb1b3541737ae3fedb3
+  MSSDK: 55fcc68c9f8f614cd7f02173a56bbfc20025a269
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  OneKit-Pangle: 19fc175cb04d0830594808f470751d3d2ab14318
+  PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
+  RangersAPM-Pangle: b52281831bdb0528619a215909114c130919e3fb
+  RARegisterKit-Pangle: 9663963a1f15127a984600a5ee3e9887bcc2c1a0
+  TapjoySDK: 3dcd899e69eb3e36f231390c95c7105730619bcb
+  TASDK: 6bd78fdf605191a3d6364a3e57f48ff5da5fd49e
+  UnityAds: a2274b216f9ed1e4d1d74c08178f21223f08e17a
+  VungleSDK-iOS: 5d0c27330a1d793d1f628a1f0e227113c9f8a478
 
-PODFILE CHECKSUM: 4dd2b1b9b024caf17edf3af9554e469f881efec2
+PODFILE CHECKSUM: d381c25aef2e3691e8dc8471a16155e44aae9cb7
 
 COCOAPODS: 1.11.2

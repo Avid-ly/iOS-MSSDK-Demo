@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0F67F72853470600C35E6B /* MSMaxBannerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0F67F52853470600C35E6B /* MSMaxBannerDemoViewController.m */; };
 		AA1BFB48245985F500D6E5D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1BFB47245985F500D6E5D5 /* AppDelegate.m */; };
 		AA1BFB4B245985F500D6E5D5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1BFB4A245985F500D6E5D5 /* SceneDelegate.m */; };
 		AA1BFB4E245985F500D6E5D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1BFB4D245985F500D6E5D5 /* ViewController.m */; };
@@ -18,8 +19,6 @@
 		AA2615C12763449900D16240 /* MSDebugConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA2615C02763449900D16240 /* MSDebugConfig.plist */; };
 		AA34F1A12469247900F65FEF /* MSInterstitialDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA34F19D2469247900F65FEF /* MSInterstitialDemoViewController.m */; };
 		AA34F1A22469247900F65FEF /* MSRewardDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA34F19E2469247900F65FEF /* MSRewardDemoViewController.m */; };
-		AA98C2DC26B2C1DD003CEBD0 /* version.md in Resources */ = {isa = PBXBuildFile; fileRef = AA98C2DA26B2C1DD003CEBD0 /* version.md */; };
-		AA98C2DD26B2C1DD003CEBD0 /* TraceAnalysisSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA98C2DB26B2C1DD003CEBD0 /* TraceAnalysisSDK.framework */; };
 		AA9EDF6225CD493E002F1D1B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EDF6125CD493E002F1D1B /* File.swift */; };
 		BD09B3B90FAFCB669C1F5E5F /* libPods-MSSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942CF5E26D070BF52784098B /* libPods-MSSDKDemo.a */; };
 /* End PBXBuildFile section */
@@ -27,6 +26,8 @@
 /* Begin PBXFileReference section */
 		136CA12ECC616E1FCDDB35E5 /* Pods-MSSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-MSSDKDemo/Pods-MSSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		942CF5E26D070BF52784098B /* libPods-MSSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0F67F52853470600C35E6B /* MSMaxBannerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMaxBannerDemoViewController.m; sourceTree = "<group>"; };
+		AA0F67F62853470600C35E6B /* MSMaxBannerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMaxBannerDemoViewController.h; sourceTree = "<group>"; };
 		AA1BFB43245985F500D6E5D5 /* MSSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1BFB46245985F500D6E5D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA1BFB47245985F500D6E5D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,8 +49,6 @@
 		AA34F19D2469247900F65FEF /* MSInterstitialDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSInterstitialDemoViewController.m; sourceTree = "<group>"; };
 		AA34F19E2469247900F65FEF /* MSRewardDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRewardDemoViewController.m; sourceTree = "<group>"; };
 		AA34F19F2469247900F65FEF /* MSRewardDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRewardDemoViewController.h; sourceTree = "<group>"; };
-		AA98C2DA26B2C1DD003CEBD0 /* version.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = version.md; sourceTree = "<group>"; };
-		AA98C2DB26B2C1DD003CEBD0 /* TraceAnalysisSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TraceAnalysisSDK.framework; sourceTree = "<group>"; };
 		AA9EDF6025CD493D002F1D1B /* MSSDKDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSSDKDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		AA9EDF6125CD493E002F1D1B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DB61AD341C91413EAEDEF324 /* Pods-MSSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-MSSDKDemo/Pods-MSSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,7 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD09B3B90FAFCB669C1F5E5F /* libPods-MSSDKDemo.a in Frameworks */,
-				AA98C2DD26B2C1DD003CEBD0 /* TraceAnalysisSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +86,6 @@
 		AA1BFB3A245985F500D6E5D5 = {
 			isa = PBXGroup;
 			children = (
-				AA98C2D826B2C1DD003CEBD0 /* 3rd */,
 				AA1BFB45245985F500D6E5D5 /* MSSDKDemo */,
 				AA1BFB44245985F500D6E5D5 /* Products */,
 				A0C4F88D0E5B27A9EC1C9D00 /* Pods */,
@@ -119,6 +116,8 @@
 				AA2615BB2763438800D16240 /* MSMopubBannerDemoViewController.m */,
 				AA2615BE2763438F00D16240 /* MSAdmobBannerDemoViewController.h */,
 				AA2615BD2763438F00D16240 /* MSAdmobBannerDemoViewController.m */,
+				AA0F67F62853470600C35E6B /* MSMaxBannerDemoViewController.h */,
+				AA0F67F52853470600C35E6B /* MSMaxBannerDemoViewController.m */,
 				AA34F19A2469247800F65FEF /* MSInterstitialDemoViewController.h */,
 				AA34F19D2469247900F65FEF /* MSInterstitialDemoViewController.m */,
 				AA34F19F2469247900F65FEF /* MSRewardDemoViewController.h */,
@@ -131,23 +130,6 @@
 				AA9EDF6025CD493D002F1D1B /* MSSDKDemo-Bridging-Header.h */,
 			);
 			path = MSSDKDemo;
-			sourceTree = "<group>";
-		};
-		AA98C2D826B2C1DD003CEBD0 /* 3rd */ = {
-			isa = PBXGroup;
-			children = (
-				AA98C2D926B2C1DD003CEBD0 /* TraceAnalysisSDK_4.1.0.4_1 */,
-			);
-			path = 3rd;
-			sourceTree = "<group>";
-		};
-		AA98C2D926B2C1DD003CEBD0 /* TraceAnalysisSDK_4.1.0.4_1 */ = {
-			isa = PBXGroup;
-			children = (
-				AA98C2DA26B2C1DD003CEBD0 /* version.md */,
-				AA98C2DB26B2C1DD003CEBD0 /* TraceAnalysisSDK.framework */,
-			);
-			path = TraceAnalysisSDK_4.1.0.4_1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +195,6 @@
 				AA1BFB56245985F700D6E5D5 /* LaunchScreen.storyboard in Resources */,
 				AA1BFB53245985F700D6E5D5 /* Assets.xcassets in Resources */,
 				AA1BFB51245985F500D6E5D5 /* Main.storyboard in Resources */,
-				AA98C2DC26B2C1DD003CEBD0 /* version.md in Resources */,
 				AA2615C12763449900D16240 /* MSDebugConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0F67F72853470600C35E6B /* MSMaxBannerDemoViewController.m in Sources */,
 				AA1BFB4E245985F500D6E5D5 /* ViewController.m in Sources */,
 				AA1BFB48245985F500D6E5D5 /* AppDelegate.m in Sources */,
 				AA1BFB59245985F700D6E5D5 /* main.m in Sources */,
