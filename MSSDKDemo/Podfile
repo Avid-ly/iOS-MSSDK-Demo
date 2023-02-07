@@ -7,7 +7,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
 # MSSDK
-pod 'MSSDK', '3.0.0.2'
+pod 'MSSDK', '4.0.0.1'
+
+# MAX聚合
 pod 'AppLovinSDK'
 pod 'AppLovinMediationAdColonyAdapter'
 pod 'AppLovinMediationChartboostAdapter'
@@ -21,6 +23,7 @@ pod 'AppLovinMediationVungleAdapter'
 pod 'AppLovinMediationGoogleAdManagerAdapter'
 pod 'AppLovinMediationByteDanceAdapter'
 pod 'AppLovinMediationTapjoyAdapter'
+pod 'AppLovinMediationSmaatoAdapter'
 
 # TASDK
 pod 'TASDK'
