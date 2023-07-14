@@ -1,5 +1,5 @@
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'MSSDKDemo' do
 
@@ -7,7 +7,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
 # MSSDK
-pod 'MSSDK', '4.0.0.1'
+pod 'MSSDK', '4.0.0.2'
 
 # MAX聚合
 pod 'AppLovinSDK'
