@@ -1,31 +1,70 @@
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'MSSDKDemo' do
 
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
-# MSSDK
-pod 'MSSDK', '4.0.0.1'
+pod 'MSSDK', '4.1.0.1'
 
-# MAX聚合
-pod 'AppLovinSDK'
-pod 'AppLovinMediationAdColonyAdapter'
-pod 'AppLovinMediationChartboostAdapter'
-pod 'AppLovinMediationFyberAdapter'
-pod 'AppLovinMediationGoogleAdapter'
-pod 'AppLovinMediationInMobiAdapter'
-pod 'AppLovinMediationIronSourceAdapter'
-pod 'AppLovinMediationFacebookAdapter'
-pod 'AppLovinMediationUnityAdsAdapter'
-pod 'AppLovinMediationVungleAdapter'
-pod 'AppLovinMediationGoogleAdManagerAdapter'
-pod 'AppLovinMediationByteDanceAdapter'
-pod 'AppLovinMediationTapjoyAdapter'
-pod 'AppLovinMediationSmaatoAdapter'
+#network = "admob"
+#network = "max"
+network = "ironsource"
 
-# TASDK
+# ------------------- Admob -------------------
+if network=="admob"
+  puts "Current Network is #{network}"
+
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'GoogleMobileAdsMediationAppLovin'
+  pod 'GoogleMobileAdsMediationChartboost'
+  pod 'GoogleMobileAdsMediationFacebook'
+  pod 'GoogleMobileAdsMediationFyber'
+  pod 'GoogleMobileAdsMediationInMobi'
+  pod 'GoogleMobileAdsMediationIronSource'
+  pod 'GoogleMobileAdsMediationUnity'
+  pod 'GoogleMobileAdsMediationVungle'
+  pod 'GoogleMobileAdsMediationPangle'
+  pod 'GoogleMobileAdsMediationMintegral'
+  # Admob测试套件（上线需移除）
+#  pod 'GoogleMobileAdsMediationTestSuite'
+  
+# ------------------- MAX -------------------
+elsif network=="max"
+  puts "Current Network is #{network}"
+  
+  pod 'AppLovinSDK'
+  pod 'AppLovinMediationChartboostAdapter'
+  pod 'AppLovinMediationFyberAdapter'
+  pod 'AppLovinMediationGoogleAdapter'
+  pod 'AppLovinMediationInMobiAdapter'
+  pod 'AppLovinMediationIronSourceAdapter'
+  pod 'AppLovinMediationFacebookAdapter'
+  pod 'AppLovinMediationUnityAdsAdapter'
+  pod 'AppLovinMediationVungleAdapter'
+  pod 'AppLovinMediationGoogleAdManagerAdapter'
+  pod 'AppLovinMediationByteDanceAdapter'
+  pod 'AppLovinMediationMintegralAdapter'
+
+# ------------------- IronSource -------------------
+elsif network=="ironsource"
+  puts "Current Network is #{network}"
+  
+  pod 'IronSourceSDK'
+  pod 'IronSourceAppLovinAdapter'
+  pod 'IronSourceChartboostAdapter'
+  pod 'IronSourceFacebookAdapter'
+  pod 'IronSourceFyberAdapter'
+  pod 'IronSourceAdMobAdapter'
+  pod 'IronSourceInMobiAdapter'
+  pod 'IronSourceMintegralAdapter'
+  pod 'IronSourcePangleAdapter'
+  pod 'IronSourceUnityAdsAdapter'
+  pod 'IronSourceVungleAdapter'
+  
+end
+
 pod 'TASDK'
 
 end
