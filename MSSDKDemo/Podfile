@@ -6,7 +6,7 @@ target 'MSSDKDemo' do
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
-pod 'MSSDK', '4.1.0.3'
+pod 'MSSDK', '4.1.0.4'
 
 network = "admob"
 #network = "max"
@@ -16,7 +16,7 @@ network = "admob"
 if network=="admob"
   puts "Current Network is #{network}"
 
-  pod 'Google-Mobile-Ads-SDK', "<11.0.0"
+  pod 'Google-Mobile-Ads-SDK'
   pod 'GoogleMobileAdsMediationAppLovin'
   pod 'GoogleMobileAdsMediationChartboost'
   pod 'GoogleMobileAdsMediationFacebook'
