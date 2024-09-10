@@ -106,7 +106,7 @@ PODS:
     - MintegralAdSDK/NativeAd
   - MintegralAdSDK/SplashAd (7.5.6):
     - MintegralAdSDK/NativeAd
-  - MSSDK (4.1.0.5)
+  - MSSDK (4.1.0.6)
   - nanopb (2.30910.0):
     - nanopb/decode (= 2.30910.0)
     - nanopb/encode (= 2.30910.0)
@@ -128,7 +128,7 @@ DEPENDENCIES:
   - GoogleMobileAdsMediationMintegral
   - GoogleMobileAdsMediationUnity
   - GoogleMobileAdsMediationVungle
-  - MSSDK (= 4.1.0.5)
+  - MSSDK (= 4.1.0.6)
   - TASDK
 
 SPEC REPOS:
@@ -182,13 +182,13 @@ SPEC CHECKSUMS:
   InMobiSDK: 7c62b28415c663b881fa7009d04e0a5484f67902
   IronSourceSDK: c57bc2f8255222dd254887eb593382c51811e13d
   MintegralAdSDK: 6a3058c0b33a2458744ffe0de1a9737e1507b99d
-  MSSDK: 9e5480b2d4d15afbfb7713e72a0f87a10a384102
+  MSSDK: 3c3d0c7e5a9ee314cfa88336b0ee2c78aa83eae0
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   TASDK: 1930e6af5db50f6ab5e23e8d219c8c96c5d4c764
   UnityAds: 358547edbd4c923cd03462289b8813d0ef91999e
   VungleAds: 1982548185a43a60f07066f28ddb5f12d67a90d7
 
-PODFILE CHECKSUM: e8ce81a17622df5079eb4c53763a2e6a1fb0be33
+PODFILE CHECKSUM: 8be020f8e2adba71ecd0b2b7e4341d8d186db989
 
 COCOAPODS: 1.15.2
