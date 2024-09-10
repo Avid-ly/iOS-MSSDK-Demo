@@ -14,8 +14,13 @@
     #import "MSSDK.h"
 #endif
 
-#import <AppLovinSDK/AppLovinSDK.h>
+#if __has_include(<AppLovinSDK/AppLovinSDK.h>)
+    #import <AppLovinSDK/AppLovinSDK.h>
+#else
+#endif
 
+#if __has_include(<AppLovinSDK/AppLovinSDK.h>)
+    
 @interface MSMaxBannerDemoViewController () <MAAdViewAdDelegate, MAAdRevenueDelegate>
 @property (nonatomic, strong) MAAdView *adView;
 @end
@@ -64,9 +69,6 @@
     CGFloat y = self.view.frame.size.height - height;
     
     self.adView.frame = CGRectMake(x, y, width, height);
-    
-    // Set background or background color for banners to be fully functional
-    self.adView.backgroundColor = UIColor.blackColor;
     
     [self.view addSubview: self.adView];
     
@@ -126,3 +128,22 @@
 }
 
 @end
+
+#else
+
+@interface MSMaxBannerDemoViewController ()
+
+@end
+
+@implementation MSMaxBannerDemoViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"未引入 MAX SDK";
+}
+
+@end
+
+#endif

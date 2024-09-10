@@ -16,12 +16,12 @@
 
 #if __has_include(<MoPub/MoPub.h>)
     #import <MoPub/MoPub.h>
-#elif __has_include(<MoPubSDKFramework/MoPub.h>)
-    #import <MoPubSDKFramework/MoPub.h>
 #else
-    #import "MoPub.h"
 #endif
 
+
+#if __has_include(<MoPub/MoPub.h>)
+    
 @interface MSMopubBannerDemoViewController () <MPAdViewDelegate>
 {
     MPAdView *_bannerView;
@@ -33,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"Mopub Banner Test";
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, scrollView.frame.size.height*2);
@@ -101,3 +102,21 @@
 }
 
 @end
+
+#else
+
+@interface MSMopubBannerDemoViewController ()
+
+@end
+
+@implementation MSMopubBannerDemoViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"未引入 Mopub SDK";
+}
+
+@end
+
+#endif

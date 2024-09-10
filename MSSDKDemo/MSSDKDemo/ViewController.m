@@ -20,11 +20,10 @@
 #endif
 
 #import <GoogleMobileAds/GoogleMobileAds.h>
-//#import <GoogleMobileAdsMediationTestSuite/GoogleMobileAdsMediationTestSuite.h>
 #import <TraceAnalysisSDK/TraceAnalysis.h>
 
-#import <AppLovinSDK/AppLovinSDK.h>
-#import "MSMaxBannerDemoViewController.h"
+//#import <AppLovinSDK/AppLovinSDK.h>
+//#import "MSMaxBannerDemoViewController.h"
 
 @interface ViewController ()
 
@@ -79,19 +78,12 @@
     [self.view addSubview:button4];
     y = button4.frame.origin.y + button4.frame.size.height + 30;
     
-//    UIButton *button7 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    button7.backgroundColor = [UIColor orangeColor];
-//    button7.frame = CGRectMake(self.view.frame.size.width/2 - 250/2, y, 250, 40);
-//    [button7 setTitle:@"Admob中介测试" forState:UIControlStateNormal];
-//    [button7 addTarget:self action:@selector(admobMediationTest) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:button7];
-//    y = button7.frame.origin.y + button7.frame.size.height;
     
     UIButton *button8 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button8.backgroundColor = [UIColor orangeColor];
     button8.frame = CGRectMake(self.view.frame.size.width/2 - 250/2, y, 250, 40);
-    [button8 setTitle:@"MAX中介测试" forState:UIControlStateNormal];
-    [button8 addTarget:self action:@selector(maxMediationTest) forControlEvents:UIControlEventTouchUpInside];
+    [button8 setTitle:@"中介测试" forState:UIControlStateNormal];
+    [button8 addTarget:self action:@selector(mediationTest) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button8];
     y = button8.frame.origin.y + button8.frame.size.height;
 }
@@ -144,30 +136,16 @@
 
 - (void)bannerClick {
 //    MSMopubBannerDemoViewController *vc = [[MSMopubBannerDemoViewController alloc] init];
-    MSMaxBannerDemoViewController *vc = [[MSMaxBannerDemoViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    nav.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:nav animated:YES completion:^{
-        
-    }];
+//    MSMaxBannerDemoViewController *vc = [[MSMaxBannerDemoViewController alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+//    nav.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [self presentViewController:nav animated:YES completion:^{
+//        
+//    }];
 }
 
-- (void)admobMediationTest {
-    
-//    [GoogleMobileAdsMediationTestSuite presentOnViewController:self delegate:nil];
-}
-
-- (void)admobAdInspectorTest {
-    
-    GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[ @"c7bb11df8263fdd132d18ed5ab670f38" ];
-    [GADMobileAds.sharedInstance presentAdInspectorFromViewController:self
-      completionHandler:^(NSError *error) {
-        NSLog(@"111111  %@",error);
-    }];
-}
-
-- (void)maxMediationTest {
-    [[ALSdk shared] showMediationDebugger];
+- (void)mediationTest {
+    [MSSDK showMediationDebugger];
 }
 
 @end

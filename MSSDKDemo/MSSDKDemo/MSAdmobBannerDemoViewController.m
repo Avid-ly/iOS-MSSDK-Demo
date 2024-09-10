@@ -14,8 +14,12 @@
     #import "MSSDK.h"
 #endif
 
-#import <GoogleMobileAds/GoogleMobileAds.h>
+#if __has_include(<GoogleMobileAds/GoogleMobileAds.h>)
+    #import <GoogleMobileAds/GoogleMobileAds.h>
+#else
+#endif
 
+#if __has_include(<GoogleMobileAds/GoogleMobileAds.h>)
 @interface MSAdmobBannerDemoViewController () <GADBannerViewDelegate>
 
 @property(nonatomic, strong) GADBannerView *bannerView;
@@ -27,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"Admob Banner Test";
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, scrollView.frame.size.height*2);
@@ -45,7 +50,6 @@
     [button1 setTitle:@"加载横幅广告" forState:UIControlStateNormal];
     [button1 addTarget:self action:@selector(bannerClick) forControlEvents:UIControlEventTouchUpInside];
     [scrollView addSubview:button1];
-    
 }
 
 - (void)close {
@@ -84,28 +88,47 @@
 #pragma mark - GADBannerViewDelegate
 
 - (void)bannerViewDidReceiveAd:(GADBannerView *)bannerView {
-  NSLog(@"bannerViewDidReceiveAd");
+    NSLog(@"bannerViewDidReceiveAd");
     [self addBannerViewToView:self.bannerView];
 }
 
 - (void)bannerView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
-  NSLog(@"bannerView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
+    NSLog(@"bannerView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
 }
 
 - (void)bannerViewDidRecordImpression:(GADBannerView *)bannerView {
-  NSLog(@"bannerViewDidRecordImpression");
+    NSLog(@"bannerViewDidRecordImpression");
 }
 
 - (void)bannerViewWillPresentScreen:(GADBannerView *)bannerView {
-  NSLog(@"bannerViewWillPresentScreen");
+    NSLog(@"bannerViewWillPresentScreen");
 }
 
 - (void)bannerViewWillDismissScreen:(GADBannerView *)bannerView {
-  NSLog(@"bannerViewWillDismissScreen");
+    NSLog(@"bannerViewWillDismissScreen");
 }
 
 - (void)bannerViewDidDismissScreen:(GADBannerView *)bannerView {
-  NSLog(@"bannerViewDidDismissScreen");
+    NSLog(@"bannerViewDidDismissScreen");
 }
 
 @end
+
+#else
+
+@interface MSAdmobBannerDemoViewController ()
+
+@end
+
+@implementation MSAdmobBannerDemoViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"未引入 Admob SDK";
+}
+
+@end
+
+#endif
