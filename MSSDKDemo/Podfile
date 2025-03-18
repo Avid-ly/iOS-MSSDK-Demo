@@ -6,7 +6,7 @@ target 'MSSDKDemo' do
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
-pod 'MSSDK', '4.1.0.8'
+pod 'MSSDK', '4.1.0.9'
 
 #network = "admob"
 network = "max"

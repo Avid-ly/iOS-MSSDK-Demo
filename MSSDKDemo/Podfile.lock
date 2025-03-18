@@ -92,7 +92,7 @@ PODS:
     - MintegralAdSDK/NativeAd
   - MintegralAdSDK/SplashAd (7.7.3):
     - MintegralAdSDK/NativeAd
-  - MSSDK (4.1.0.8)
+  - MSSDK (4.1.0.9)
   - OMSDK_Appodeal (1.5.2)
   - StackModules/Core-Static (3.0.1)
   - StackModules/ProductPresentation-Static (3.0.1):
@@ -123,7 +123,7 @@ DEPENDENCIES:
   - AppLovinMediationUnityAdsAdapter (= 4.12.5.0)
   - AppLovinMediationVungleAdapter (= 7.4.2.1)
   - AppLovinSDK (= 13.0.1)
-  - MSSDK (= 4.1.0.8)
+  - MSSDK (= 4.1.0.9)
   - TASDK
 
 SPEC REPOS:
@@ -183,13 +183,13 @@ SPEC CHECKSUMS:
   InMobiSDK: 0cfb1a1eb5112fa0236ae1fab549e31fb96c9566
   IronSourceSDK: 9ca8fc2e59892dece8d93bf2745137d1cf16333e
   MintegralAdSDK: 217cca20529055c8791c82985dd7a74864e49fd0
-  MSSDK: f39b1ef1b25b7912fc91ddf804234cca059eb751
+  MSSDK: a1646d77c1adde1bca6e672ff182a23b7cb2dd7e
   OMSDK_Appodeal: 066f9da2c77d560e319341c6bd4739828bc65842
   StackModules: 3a8cbd3d0f48f678b9310f471c7b84877e40201e
   TASDK: 1930e6af5db50f6ab5e23e8d219c8c96c5d4c764
   UnityAds: a4036ed911b4df2227d8137f4f777fcb86c4a2df
   VungleAds: d7cf66a6dfd390a583ea2b2cfb9af1043b686e58
 
-PODFILE CHECKSUM: fbbf791aaf34191ce894bf18d741d025f389a8c0
+PODFILE CHECKSUM: e63680dedc1cc96ea90c7ea28812cf4f864efd48
 
 COCOAPODS: 1.15.2
