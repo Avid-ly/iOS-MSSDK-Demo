@@ -1,23 +1,22 @@
 
-platform :ios, '12.0'
+platform :ios, '13.0'
 
 target 'MSSDKDemo' do
 
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Avid-ly/iOS-CocoaPods-Spec.git'
 
-pod 'MSSDK', '4.1.0.9'
-
 #network = "admob"
 network = "max"
 #network = "ironsource"
-
+  
 # ------------------- Admob -------------------
 if network=="admob"
   puts "Current Network is #{network}"
-
-  pod 'Google-Mobile-Ads-SDK', '11.12.0'    # 2024-11-07 版本
-  pod 'GoogleMobileAdsMediationAppLovin', '13.0.1.0'
+  
+  pod 'MSSDK', '4.1.1.0'
+  pod 'Google-Mobile-Ads-SDK', '11.12.0'
+  pod 'GoogleMobileAdsMediationAppLovin', '13.1.0.0'
   pod 'GoogleMobileAdsMediationChartboost', '9.8.0.0'
   pod 'GoogleMobileAdsMediationFacebook', '6.15.2.1'
   pod 'GoogleMobileAdsMediationFyber', '8.3.3.0'
@@ -32,40 +31,56 @@ if network=="admob"
 elsif network=="max"
   puts "Current Network is #{network}"
   
-  pod 'AppLovinSDK', '13.0.1'   # 2024-10-26 版本
+  pod 'MSSDK', '4.1.1.0'
+  pod 'AppLovinSDK', '13.1.0'
   pod 'AppLovinMediationGoogleAdapter', '11.12.0.0'
   pod 'AppLovinMediationGoogleAdManagerAdapter', '11.12.0.0'
-  pod 'AppLovinMediationIronSourceAdapter', '8.5.0.0.0'
-  pod 'AppLovinMediationFacebookAdapter', '6.15.2.1'
+  pod 'AppLovinMediationIronSourceAdapter', '8.7.0.0.0'
+  pod 'AppLovinMediationFacebookAdapter', '6.17.1.0'
   pod 'AppLovinMediationChartboostAdapter', '9.8.0.0'
   pod 'AppLovinMediationFyberAdapter', '8.3.3.0'
   pod 'AppLovinMediationInMobiAdapter', '10.8.0.0'
   pod 'AppLovinMediationUnityAdsAdapter', '4.12.5.0'
-  pod 'AppLovinMediationVungleAdapter', '7.4.2.1'
+  pod 'AppLovinMediationVungleAdapter', '7.4.5.0'
   pod 'AppLovinMediationByteDanceAdapter', '6.3.1.1.0'
   pod 'AppLovinMediationMintegralAdapter', '7.7.3.0.0'
-  pod 'AppLovinMediationBidMachineAdapter', '3.1.1.0.0'
-
+  pod 'AppLovinMediationBidMachineAdapter', '3.2.0.0.0'
+  pod 'AppLovinMediationMolocoAdapter', '3.8.0.2'
 
 # ------------------- IronSource -------------------
 elsif network=="ironsource"
   puts "Current Network is #{network}"
   
-  pod 'IronSourceSDK', '8.5.0.0'    # 2024-11-20 版本
-  pod 'IronSourceAppLovinAdapter', '4.3.50.0'
+  pod 'MSSDK', '4.1.1.0'
+  pod 'IronSourceSDK', '8.7.0.0'
+  pod 'IronSourceAppLovinAdapter', '4.3.53.0'
   pod 'IronSourceChartboostAdapter', '4.3.19.3'
-  pod 'IronSourceFacebookAdapter', '4.3.46.1'
+  pod 'IronSourceFacebookAdapter', '4.3.49.0'
   pod 'IronSourceFyberAdapter', '4.3.37.0'
   pod 'IronSourceAdMobAdapter', '4.3.59.0'
   pod 'IronSourceInMobiAdapter', '4.3.26.0'
   pod 'IronSourceMintegralAdapter', '4.3.27.0'
   pod 'IronSourcePangleAdapter', '4.3.35.0'
   pod 'IronSourceUnityAdsAdapter', '4.3.45.0'
-  pod 'IronSourceVungleAdapter', '4.3.39.0'
-  pod 'IronSourceBidMachineAdapter', '4.3.12.0'
+  pod 'IronSourceVungleAdapter', '4.3.43.0'
+  pod 'IronSourceBidMachineAdapter', '4.3.14.0'
   
 end
 
+# ------------------- Other SDK -------------------
+
+# TASDK
 pod 'TASDK'
+
+# FirebaseAnalytics
+pod 'FirebaseAnalytics'
+
+# AppsFlyer
+pod 'AppsFlyerFramework'
+
+# Facebook CoreKit
+pod 'FBSDKCoreKit'
+
+use_modular_headers!
 
 end
